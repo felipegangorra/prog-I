@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    -10\n    33\n    3\n  output: |\n    36\n\n- input: |\n    10\n    87\n    15\n  output: |\n    A soma ultrapassou o limite\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Soma Ímpares\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6290404750131200,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 6290404750131200,
+  "key": "6290404750131200",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

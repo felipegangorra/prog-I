@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    7.5\n  output: |\n    média final: 7.5\n\n- input: |\n    6.5\n    8.0\n  output: |\n    média final: 7.1\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Status\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6420167187759104,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 6420167187759104,
+  "key": "6420167187759104",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

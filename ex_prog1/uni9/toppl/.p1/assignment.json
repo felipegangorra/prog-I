@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_alunos = getattr(undertest, 'filtra_alunos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        inscritos = [121, 123, 124]\n        alunos = [ (120,8.0), (121,7.5), (122,5.0), (123,6.0), (124,9.0), (125,4.0) ]\n        assert filtra_alunos(alunos, inscritos, 7.0) == 4\n        assert alunos == [ (121,7.5), (124,9.0) ]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Toppl\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5782090438148096,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 5782090438148096,
+  "key": "5782090438148096",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

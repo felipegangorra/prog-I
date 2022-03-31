@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python3 public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global maior_slice\n        undertest = __import__(module)\n        maior_slice = getattr(undertest, 'maior_slice', None)\n\n    def test_1_publico(self):\n        assert maior_slice([1, 2, 3, 4, 2, 0, 1]) == [1, 2, 3, 4]\n        assert maior_slice([7, 6, 2, 9, 10]) == [2, 9, 10]\n        assert maior_slice([7, 8, 9, 1, 2, 3, 0]) == [1, 2, 3]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Maior Slice\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5302044896264192,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 5302044896264192,
+  "key": "5302044896264192",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

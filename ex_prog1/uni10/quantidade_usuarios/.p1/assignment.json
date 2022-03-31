@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python3 public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global quantidade_usuarios\n        undertest = __import__(module)\n        quantidade_usuarios = getattr(undertest, 'quantidade_usuarios', None)\n \n    def test_example(self):\n\n        lsd = {1234:['Andrey'], 1226:['Nazareno', 'Livia'], 9999:['administrador'] }\n        deq = {1114:['Ana'] }\n\n        assert quantidade_usuarios(lsd) == 3\n        assert quantidade_usuarios(deq) == 1\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Quantidade de Usuários\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6364295266828288,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 6364295266828288,
+  "key": "6364295266828288",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

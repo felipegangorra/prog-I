@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "datagen.py",
+    "menor100.py",
+    "usa_while.py"
+  ],
+  "tests": [],
+  "title": "Primeiro menor que 100"
+}

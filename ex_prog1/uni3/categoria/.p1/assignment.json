@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Antônio\n    5\n  output: |\n    Antônio, 5 anos, Infantil A.\n\n- input: |\n    André\n    9\n  output: |\n    André, 9 anos, Infantil B.\n\n- input: |\n    Eduardo\n    3\n  output: |\n    Eduardo, 3 anos, Não pode competir.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"categoria\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5898528310165504,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 5898528310165504,
+  "key": "5898528310165504",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

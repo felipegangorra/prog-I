@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass AcceptanceTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global idosos_inicio\n        undertest = __import__(module)\n        idosos_inicio = getattr(undertest, 'idosos_inicio', None)\n\n    def test_exemplo(self):\n        fila = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]\n        self.assertEqual( idosos_inicio(fila), None )\n        self.assertEqual( fila, [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Mais Velhos Primeiro\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5888513419509760,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 5888513419509760,
+  "key": "5888513419509760",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

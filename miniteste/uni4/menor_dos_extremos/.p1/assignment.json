@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    8\n    casa\n    boneco\n    lua\n    tv\n    pintura\n    futebol\n    sol\n    barata\n  output: |\n    Menor palavra dos extremos: casa (4 letras)\n    3 palavra(s) com tamanho menor\n    4 palavra(s) com tamanho maior\n\n- input: |\n    4\n    casa\n    lua\n    tv\n    bola\n  output: |\n    Menor palavra dos extremos: casa, bola (4 letras)\n    2 palavra(s) com tamanho menor\n    0 palavra(s) com tamanho maior\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Menor dos Extremos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6373742819147776,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 6373742819147776,
+  "key": "6373742819147776",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

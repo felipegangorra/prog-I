@@ -1,0 +1,26 @@
+- input: |
+    8
+    casa
+    boneco
+    lua
+    tv
+    pintura
+    futebol
+    sol
+    barata
+  output: |
+    Menor palavra dos extremos: casa (4 letras)
+    3 palavra(s) com tamanho menor
+    4 palavra(s) com tamanho maior
+
+- input: |
+    4
+    casa
+    lua
+    tv
+    bola
+  output: |
+    Menor palavra dos extremos: casa, bola (4 letras)
+    2 palavra(s) com tamanho menor
+    0 palavra(s) com tamanho maior
+

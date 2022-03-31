@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    8 4 1 9 11 2  \n    0 4 1 11 2 2\n  output: |\n    i = 1: 4\n    i = 2: 1\n    i = 5: 2\n    Valores coincidentes: 3 (25%)\n\n- input: |\n    10 15 8 6\n    10 15 8 1 1 1 23  \n  output: |\n    i = 0: 10\n    i = 1: 15\n    i = 2: 8\n    Valores coincidentes: 3 (27%)\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Valores Coincidentes\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6442658857746432,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 6442658857746432,
+  "key": "6442658857746432",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

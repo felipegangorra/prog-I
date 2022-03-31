@@ -1,0 +1,17 @@
+- input: |
+    8 4 1 9 11 2  
+    0 4 1 11 2 2
+  output: |
+    i = 1: 4
+    i = 2: 1
+    i = 5: 2
+    Valores coincidentes: 3 (25%)
+
+- input: |
+    10 15 8 6
+    10 15 8 1 1 1 23  
+  output: |
+    i = 0: 10
+    i = 1: 15
+    i = 2: 8
+    Valores coincidentes: 3 (27%)

@@ -1,0 +1,35 @@
+- input: |
+    888456
+    10
+  output: |
+    soma: 16
+    números lidos: 2 de 6
+    critério de parada: limite
+
+- input: |
+    123556789
+    10
+  output: |
+    soma: 11
+    números lidos: 4 de 9
+    critério de parada: limite
+
+- input: |
+    9876543210
+    50
+  output: |
+    soma: 45
+    números lidos: 10 de 10
+    critério de parada: final da sequência
+
+- input: |
+    55337788
+    60
+  output: |
+    soma: 30
+    números lidos: 6 de 8
+    critério de parada: 6 ímpares
+
+
+
+

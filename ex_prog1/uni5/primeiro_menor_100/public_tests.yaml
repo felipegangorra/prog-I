@@ -1,0 +1,5 @@
+- type: script
+  script: python3 ./usa_while.py {}
+
+- output: |
+    69, na posição 1700020

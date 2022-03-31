@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global insere_ordenado_primeiro\n        undertest = __import__(module)\n        insere_ordenado_primeiro = getattr(undertest, 'insere_ordenado_primeiro', None)\n\n    def test_exemplo(self):\n        l1 = [5,2,6,9,11,13]\n        insere_ordenado_primeiro(l1)\n        assert l1 == [2,5,6,9,11,13]\n\n    def test_outro(self):\n        l2 = [3,1,2,4]\n        insere_ordenado_primeiro(l2)\n        assert l2 == [1,2,3,4]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Insere Primeiro\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5878864909697024,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 5878864909697024,
+  "key": "5878864909697024",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    4.5\n    1.0\n  output: |\n    77.8% do peso do produto é de água congelada.\n    Produto não conforme.\n\n- input: |\n    10.0\n    9.8\n  output: |\n    2.0% do peso do produto é de água congelada.\n    Produto qualis A.\n\n- input: |\n    10.0\n    9.3\n  output: |\n    7.0% do peso do produto é de água congelada.\n    Produto em conformidade.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Controle de Qualidade\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5054586362527744,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 5054586362527744,
+  "key": "5054586362527744",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

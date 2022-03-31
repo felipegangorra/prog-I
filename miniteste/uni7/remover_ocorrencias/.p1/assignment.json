@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python3 public_tests.py {}\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global remove_ocorrencias\n        undertest = __import__(module)\n        remove_ocorrencias = getattr(undertest, 'remove_ocorrencias', None)\n\n    def test_example(self):\n        lista = [1, \"Prog1\", 3.4, 1]\n        assert remove_ocorrencias(lista, 1) == 1\n        assert lista == [\"Prog1\", 3.4]\n\n    def test_exemplo2(self):\n        lista = [1, \"Prog1\", 3.4, 1]\n        assert remove_ocorrencias(lista, 2) == None\n        assert lista == [1, \"Prog1\", 3.4, 1]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Remove Ocorrências\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5835868260532224,
+    "index": null,
+    "user": "felipe.gangorra@ccc.ufcg.edu.br"
+  },
+  "iid": 5835868260532224,
+  "key": "5835868260532224",
+  "site": "prog1",
+  "user": "felipe.gangorra@ccc.ufcg.edu.br"
+}

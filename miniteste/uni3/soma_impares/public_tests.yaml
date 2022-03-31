@@ -1,0 +1,13 @@
+- input: |
+    -10
+    33
+    3
+  output: |
+    36
+
+- input: |
+    10
+    87
+    15
+  output: |
+    A soma ultrapassou o limite
