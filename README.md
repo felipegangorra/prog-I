@@ -1,7 +1,7 @@
 # Programação 1 e Laboratório de Programação 1
 ▪Repositório da disciplina de Programação 1 e Laboratório de Programação 1 do curso de Ciência da Computação- UFCG.
 
-▪Nesse repositório há todas as atividades, feitas por mim, de programação feitas nas cadeiras iniciais de programação do curso de computação da ufcg.
+▪Nesse repositório há todas as atividades realizadas por mim nas cadeiras iniciais de programação do curso de computação da ufcg.
 
 ##
 ▪A cadeira é dividida em 10 unidades:
