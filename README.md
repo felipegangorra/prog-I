@@ -1,10 +1,13 @@
-# Programação 1 e Laboratório de Programação 1
-▪Repositório da disciplina de Programação 1 e Laboratório de Programação 1 do curso de Ciência da Computação- UFCG.
+# Programação 1 e Laboratório de Programação 1 💻🐍
 
-▪Nesse repositório há todas as atividades realizadas por mim nas cadeiras iniciais de programação do curso de computação da ufcg.
+◻ Repositório de Programação 1 e Laboratório de Programação 1 do curso de Ciência da Computação na Universidade Federal de Campina Grande ([*UFCG*](https://portal.ufcg.edu.br)).
+
+◻ Nesse repositório há todas as atividades realizadas por mim nas cadeiras iniciais de programação do curso de computação da ufcg.
+
+◻ Linguagem: Python.
 
 ##
-▪A cadeira é dividida em 10 unidades:
+▫ A cadeira é dividida em 10 unidades:
 
 1. Conceitos elementares de programação
 2. Escrevendo programas simples
